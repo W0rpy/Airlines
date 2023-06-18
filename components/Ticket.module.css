@@ -1,0 +1,272 @@
+.TicketAvia {
+   box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+   border-radius: 15px;
+   display: grid;
+   grid-template-columns: 132px 1fr 190px;
+}
+
+.TicketAviaIrrevocable {
+   background: #8BA5D8;
+   border-radius: 15px 0px;
+   padding: 6px 23px;
+   margin-bottom: 28px;
+   font-size: 0.85rem;
+   font-weight: 600;
+   line-height: 14px;
+   color: #FFFFFF;
+}
+
+.TicketAviaLogo {
+   margin-bottom: 8px;
+   display: flex;
+   justify-content: center;
+}
+
+.TicketAviaText {
+   font-size: 1.28rem;
+   display: flex;
+   justify-content: center;
+}
+
+
+.TicketAviaPrice {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.28rem;
+   font-weight: 700;
+   color: #232323;
+}
+
+.TicketAviaInfo {
+   padding: 37px 20px 27px 25px;
+   display: grid;
+   grid-template-columns: 1fr 79px;
+}
+
+.Handbag {
+   margin-right: 10px;
+   padding-top: 17px;
+}
+
+.TicketAviaPictures {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.TicketAviaPrice {
+   border-left: 1px solid #DDE3EE;
+}
+
+.TicketButtons {
+   padding: 11px 0px 0px;
+   display: flex;
+   align-items: center;
+}
+
+.TicketButton {
+   border: 1px solid #B7BAC1;
+   border-radius: 10px;
+   background-color: #FFFFFF;
+   min-height: 34px;
+   flex: 0 1 107px;
+   color: #5C5C5C;
+}
+
+.TicketButton.Active {
+   background-color: #DDE3EE;
+   color: #232323;
+}
+
+.TicketButton:not(:last-child) {
+   margin-right: 20px;
+}
+
+.DepartureInfo {
+   display: grid;
+   grid-template-columns: 102px 1fr 132px;
+}
+
+.WayAirport {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 4px;
+}
+
+.WayDecor {
+   height: 1px;
+   background-color: #B7BAC1;
+   width: 90%;
+   position: relative;
+   margin-bottom: 8px;
+}
+
+.WayDecor::before {
+   width: 8px;
+   height: 8px;
+   background: #C4C4C4;
+   content: '';
+   border-radius: 50%;
+   position: absolute;
+   left: 0;
+   top: -3px;
+}
+
+.WayDecor::after {
+   width: 8px;
+   height: 8px;
+   background: #C4C4C4;
+   content: '';
+   border-radius: 50%;
+   position: absolute;
+   right: 0;
+   top: -3px;
+}
+
+.DepartureTime {
+   font-size: 1.71rem;
+   font-weight: 700;
+   margin-bottom: 8px;
+   color: #232323;
+}
+
+.Departure {
+   text-align: center;
+}
+
+.DepartureCity {
+   font-weight: 500;
+   margin-bottom: 3px;
+}
+
+.WayText {
+   text-align: center;
+   color: #B7BAC1;
+}
+
+.AirportDeparture {
+   line-height: 1.42;
+   color: #B7BAC1;
+}
+
+.WayDecorElement {
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width:991.98px) {
+   .TicketAvia {
+      grid-template-columns: 122px 1fr 130px;
+   }
+
+   .TicketAviaInfo {
+      padding: 37px 15px 27px 15px;
+      display: grid;
+      grid-template-columns: 1fr 55px;
+   }
+}
+
+@media (max-width:766.98px) {
+   .TicketAvia {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .TicketAviaIrrevocable {
+      text-align: center;
+      margin-bottom: 15px;
+   }
+
+   .TicketAviaCompany {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+   }
+
+   .TicketAviaLogo {
+      margin: 0px 10px 0px 0px;
+   }
+
+   .TicketAviaInfo {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .TicketButtons {
+      justify-content: center;
+      padding: 20px 0px 0px;
+   }
+
+   .TicketAviaPrice {
+      border-top: 1px solid #DDE3EE;
+      border-left: none;
+      padding: 20px;
+   }
+
+   .TicketAviaPictures {
+      justify-content: center;
+   }
+
+   .TicketContent {
+      margin-bottom: 15px;
+   }
+
+   .TicketButton:not(:last-child) {
+      margin-right: 15px;
+   }
+
+   .DepartureInfo {
+      grid-template-columns: auto 1fr auto;
+      column-gap: 10px;
+   }
+}
+
+@media (max-width:500.98px) {
+   .TicketButton {
+      min-height: 30px;
+      flex: 0 1 95px;
+   }
+
+   .TicketAviaInfo {
+      padding: 15px 10px;
+   }
+
+   .DepartureInfo {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .Departure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .Departure:first-child {
+      margin-bottom: 5px;
+   }
+
+   .DepartureDate {
+      order: 2;
+      margin-right: 10px;
+      font-weight: 500;
+      font-size: 1.14rem;
+   }
+
+   .DepartureCity {
+      order: 3;
+      margin-bottom: 0px;
+      font-size: 1.14rem;
+   }
+
+   .DepartureTime {
+      margin: 0px 10px 0px 0px;
+   }
+
+   .Way {
+      margin-bottom: 15px;
+   }
+}
