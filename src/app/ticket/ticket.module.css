@@ -5,7 +5,7 @@
 }
 
 .TicketBlock {
-   padding: 51px 0px 0px;
+   padding: 51px 0px 20px;
 }
 
 .TicketBackLink {
@@ -43,6 +43,6 @@
    }
 
    .TicketBlock {
-      padding: 30px 0px 0px;
+      padding: 30px 0px 20px;
    }
 }

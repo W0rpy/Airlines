@@ -30,7 +30,7 @@ function Tickets() {
                   <div className={styles.TicketContent}>
                      <div className={styles.DepartureInfo}>
                         <div className={styles.Departure}>
-                           <div className={styles.DepartureTime}>22:57</div>
+                           <div className={styles.DepartureTime}>21:57</div>
                            <div className={styles.DepartureCity}>{ticketInfo.departure}</div>
                            <div className={styles.DepartureDate}>19.05.2022</div>
                         </div>
@@ -45,7 +45,7 @@ function Tickets() {
                            <div className={styles.WayText}>В пути 1 ч 45 мин</div>
                         </div>
                         <div className={styles.Departure}>
-                           <div className={styles.DepartureTime}>11:05</div>
+                           <div className={styles.DepartureTime}>23:42</div>
                            <div className={styles.DepartureCity}>{ticketInfo.arrive}</div>
                            <div className={styles.DepartureDate}>19.05.2022</div>
                         </div>
@@ -73,7 +73,7 @@ function Tickets() {
                   <div className={styles.TicketContent}>
                      <div className={styles.DepartureInfo}>
                         <div className={styles.Departure}>
-                           <div className={styles.DepartureTime}>22:57</div>
+                           <div className={styles.DepartureTime}>15:20</div>
                            <div className={styles.DepartureCity}>{ticketInfo.arrive}</div>
                            <div className={styles.DepartureDate}>{ticketInfo.reverse}</div>
                         </div>
@@ -88,7 +88,7 @@ function Tickets() {
                            <div className={styles.WayText}>В пути 1 ч 45 мин</div>
                         </div>
                         <div className={styles.Departure}>
-                           <div className={styles.DepartureTime}>11:05</div>
+                           <div className={styles.DepartureTime}>17:05</div>
                            <div className={styles.DepartureCity}>{ticketInfo.departure}</div>
                            <div className={styles.DepartureDate}>{ticketInfo.reverse}</div>
                         </div>
